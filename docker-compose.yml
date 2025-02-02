@@ -1,0 +1,9 @@
+services:
+  flask:
+    build:
+      context: .
+    image: vishnu1620/flask
+    container_name: flask
+    ports:
+      - "8001:7000"
+    restart: unless-stopped
